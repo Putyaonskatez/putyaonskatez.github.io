@@ -1,0 +1,66 @@
+/* 1. Define the custom Shadow Murder font */
+@font-face {
+  font-family: 'Shadow Murder';
+  src: url('fonts/ShadowMurder.woff2') format('woff2'),
+       url('fonts/ShadowMurder.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. Global reset & background setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* 3. Floating text container */
+.background-text-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 4. Style each floating "PYOS" element */
+.floating-text {
+  position: absolute;
+  font-family: 'Shadow Murder', sans-serif;
+  font-size: 5vw;
+  color: rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  animation: floatEffect linear infinite;
+}
+
+/* 5. Animation for floating */
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+/* 6. Main logo styling (if used) */
+.main-logo {
+  position: relative;
+  z-index: 10;
+  font-family: 'Shadow Murder', sans-serif;
+  font-size: 6vw;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+}
