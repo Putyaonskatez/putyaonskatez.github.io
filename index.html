@@ -4,6 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PutYaOnSkatez</title>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2WvO4PWvP5LR9G1z5r9sY5aYz2Hx1UzOaJrO4P8B9IBxvEJwH5P5XayGpU9EwFVaR1T2w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <style>
     * {
       margin: 0;
@@ -14,7 +22,7 @@
     html, body {
       height: 100%;
       width: 100%;
-      font-family: 'Arial Black', sans-serif;
+      font-family: 'Arial', sans-serif;
     }
 
     body {
@@ -28,16 +36,18 @@
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
       padding: 40px;
       border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: white;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
+      margin-bottom: 30px;
+      letter-spacing: 3px;
+      font-weight: bold;
     }
 
     .buttons {
@@ -48,21 +58,33 @@
     }
 
     .buttons a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       text-decoration: none;
       color: white;
-      background-color: #ff0050;
-      padding: 15px 30px;
-      border-radius: 10px;
-      font-size: 1.2rem;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
       transition: 0.3s ease;
     }
 
-    .buttons a.youtube {
+    .buttons a i {
+      font-size: 1.3rem;
+    }
+
+    .tiktok {
+      background-color: #010101;
+      border: 2px solid #25F4EE;
+    }
+
+    .youtube {
       background-color: #FF0000;
     }
 
     .buttons a:hover {
-      opacity: 0.8;
+      opacity: 0.85;
       transform: scale(1.05);
     }
   </style>
@@ -71,8 +93,12 @@
   <div class="overlay">
     <h1>PutYaOnSkatez</h1>
     <div class="buttons">
-      <a href="https://www.tiktok.com/@putyaonskatez" target="_blank">TikTok</a>
-      <a href="https://www.youtube.com/@putyaonskatez/videos" class="youtube" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@putyaonskatez" class="tiktok" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+      <a href="https://www.youtube.com/@putyaonskatez/videos" class="youtube" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
     </div>
   </div>
 </body>
