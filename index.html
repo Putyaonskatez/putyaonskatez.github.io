@@ -14,17 +14,46 @@
     html, body {
       height: 100%;
       width: 100%;
+      font-family: 'Arial Black', sans-serif;
     }
 
     body {
-      background-image: url('pyos-bg.png'); /* your image */
-      background-size: cover;              /* cover full screen */
-      background-position: center center;  /* center the image */
-      background-repeat: no-repeat;        /* don’t repeat it */
-      background-attachment: fixed;        /* makes it "stick" */
+      background-image: url('pyos-bg.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 60px;
+      border-radius: 15px;
+      color: white;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <h1>PutYaOnSkatez</h1>
+    <p>Official Website Coming Soon</p>
+  </div>
 </body>
 </html>
