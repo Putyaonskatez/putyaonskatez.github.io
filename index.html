@@ -2,140 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Putyaonskatez</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #121212;
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #ff79c6;
-    }
-    .banner {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-    }
-    .section {
-      padding: 20px;
-      text-align: center;
-    }
-    .socials a {
-      background-color: #ff79c6;
-      color: #121212;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-    }
-    .socials a:hover {
-      background-color: #ff92d0;
-    }
-    .video-embed {
-      margin: 20px auto;
-      max-width: 800px;
-    }
-    .video-embed iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
-    }
-    .merch-grid {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .product-card {
-      background-color: #1e1e1e;
-      padding: 15px;
-      border-radius: 8px;
-      width: 200px;
-      text-align: center;
-    }
-    .product-card img {
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-    .product-card h3 {
-      color: #ff79c6;
-      margin: 10px 0;
-    }
-    .product-card p {
-      color: white;
-      margin-bottom: 10px;
-    }
-    .product-card a {
-      background-color: #ff79c6;
-      color: #121212;
-      padding: 8px 12px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>putyaonskatez</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-black text-white font-sans">
 
-  <!-- Full-Screen Banner -->
-  <img src="your-profile-picture.jpg" alt="Putyaonskatez Banner" class="banner"/>
+  <!-- Hero Section -->
+  <section class="text-center py-12">
+    <h1 class="text-5xl font-bold text-red-500">💣 putyaonskatez</h1>
+    <p class="text-lg mt-2 text-gray-300">2 Finger CODM King | Clan Leader | Wallbang Legend</p>
+    <p class="text-md text-gray-400 mt-1">"Clipped DOGGO, NOVAOS, CrackyCODM — 1v1 to Join Clan ⚔️"</p>
+  </section>
 
-  <!-- Signature Banner at the Bottom -->
-  <img src="pyosbanner-bg.png.jpg" alt="Signature Banner Bottom" class="banner"/>
+  <!-- Content Grid -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-8 pb-16">
 
-  <!-- Vlogs Section -->
-  <section class="section" id="vlogs">
-    <h2>📹 Vlogs & BTS</h2>
-    <p>Raw edits and behind-the-movement moments.</p>
-    <div class="video-embed">
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+    <!-- CODM Clips -->
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">CODM 1v1 Clips</h2>
+      <p>Elite 1v1 showdowns that earned respect in every lobby.</p>
     </div>
-  </section>
 
-  <!-- Podcast Section -->
-  <section class="section" id="podcast">
-    <h2>🎧 Podcast Real Talk</h2>
-    <p>Convos on gaming, creativity, street culture. Drop your episode link below:</p>
-    <div class="video-embed">
-      <iframe src="https://www.youtube.com/embed/YOUR_PODCAST_VIDEO_ID" allowfullscreen></iframe>
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">CODM Wallbang Clips</h2>
+      <p>Precision wallbangs by the best 2-finger wallbang player in CODM.</p>
     </div>
-  </section>
 
-  <!-- Merch Section -->
-  <section class="section" id="merch">
-    <h2>👕 Merch & Drops</h2>
-    <div class="merch-grid">
-      <div class="product-card">
-        <img src="featured-deck-1.jpg" alt="Custom Deck #1"/>
-        <h3>Putyaonskatez Deck – Classic</h3>
-        <p>$59.95</p>
-        <a href="LINK_TO_PRODUCT_1" target="_blank">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="featured-deck-2.jpg" alt="Limited Edition Deck"/>
-        <h3>Putyaonskatez Deck – Limited</h3>
-        <p>$74.99</p>
-        <a href="LINK_TO_PRODUCT_2" target="_blank">Pre‑Order</a>
-      </div>
+    <!-- GLOIRV Vault -->
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">GLOIRV Vault Rare Clips</h2>
+      <p>Exclusive archive from the GLOIRV era — raw, rare, legendary plays.</p>
     </div>
-  </section>
 
-  <!-- TikTok Follow Link -->
-  <section class="section socials">
-    <h2>📱 Follow Me</h2>
-    <p>Tap in on TikTok — join the movement and watch exclusive clips.</p>
-    <a href="https://www.tiktok.com/@putyaonskatez" target="_blank" rel="noopener noreferrer">
-      @putyaonskatez on TikTok
-    </a>
-  </section>
+    <!-- Bio Section -->
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">Before the Come Up Bio</h2>
+      <p>From GLOIRV to putyaonskatez — the origin story of a clan leader.</p>
+    </div>
 
-  <!-- Bottom Signature Banner -->
-  <img src="pyosbanner-bg.png.jpg" alt="Signature Banner Bottom" class="banner"/>
+    <!-- Skateboard Clips -->
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">Skateboard Clips</h2>
+      <p>Street clips, tech tricks, raw sessions – no cap, all grind.</p>
+    </div>
+
+    <!-- Merch -->
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">Merch & Stickers</h2>
+      <p>Custom Tech Decks, Skateboard decals, OG clan gear, and more.</p>
+    </div>
+
+    <!-- Podcast -->
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">Podcast</h2>
+      <p>Unfiltered takes on CODM, clan life, and real-world grind stories.</p>
+    </div>
+
+    <!-- Spiritual Audio Talks -->
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-red-500 transition">
+      <h2 class="text-2xl font-bold mb-2 text-red-400">Spiritual Audio Talks</h2>
+      <p>Peaceful nature talks about focus, purpose, and the gamer mindset.</p>
+    </div>
+
+  </section>
 
 </body>
 </html>
+
