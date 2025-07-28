@@ -2,129 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PUTYAONSKATEZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Putyaonskatez</title>
   <style>
     body {
-      background-color: #1a1a1a;
-      color: pink;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: white;
       margin: 0;
       padding: 0;
     }
-
-    header {
-      background-color: gray;
-      color: pink;
+    h1, h2 {
       text-align: center;
-      padding: 40px 20px;
+      color: #ff79c6;
     }
-
-    header h1 {
-      font-size: 4em;
-      margin: 0;
+    .banner {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
     }
-
-    section {
-      padding: 30px 20px;
-      border-bottom: 1px solid #444;
+    .section {
+      padding: 20px;
+      text-align: center;
     }
-
-    h2 {
-      color: black;
-      font-size: 2em;
+    .socials a {
+      background-color: #ff79c6;
+      color: #121212;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+    .socials a:hover {
+      background-color: #ff92d0;
+    }
+    .video-embed {
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    .video-embed iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+    .merch-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .product-card {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
       margin-bottom: 10px;
     }
-
-    h3 {
-      color: pink;
-      margin-top: 20px;
+    .product-card h3 {
+      color: #ff79c6;
+      margin: 10px 0;
     }
-
-    p {
-      color: pink;
-      line-height: 1.6;
+    .product-card p {
+      color: white;
+      margin-bottom: 10px;
     }
-
-    a {
-      color: pink;
-      text-decoration: underline;
+    .product-card a {
+      background-color: #ff79c6;
+      color: #121212;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Big Header -->
-  <header>
-    <h1>PUTYAONSKATEZ</h1>
-  </header>
+  <!-- Full-Screen Banner -->
+  <img src="your-profile-picture.jpg" alt="Putyaonskatez Banner" class="banner"/>
 
-  <!-- 🎮 CODM Vault Section -->
-  <section id="codm-vault">
-    <h2>🎮 CODM Vault</h2>
-    <h3>1v1 Showdowns</h3>
-    <p>Competitive ranked and private match 1v1 clips showing off raw skill, clutch plays, and top-tier reflexes.</p>
+  <!-- Signature Banner at the Bottom -->
+  <img src="pyosbanner-bg.png.jpg" alt="Signature Banner Bottom" class="banner"/>
 
-    <h3>Wallbang Madness</h3>
-    <p>The nastiest and most precise wallbang shots — proving that map knowledge and two-finger aim go crazy.</p>
-
-    <h3>Hall of Fame Wallbangs</h3>
-    <p>Legendary clips that define greatness. These aren’t just shots, they’re milestones. Handpicked and iconic.</p>
+  <!-- Vlogs Section -->
+  <section class="section" id="vlogs">
+    <h2>📹 Vlogs & BTS</h2>
+    <p>Raw edits and behind-the-movement moments.</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <!-- 🔥 GLOIRV Vault Section -->
-  <section id="gloirv-vault">
-    <h2>🔥 GLOIRV Vault</h2>
-    <h3>Rare Vault Clips (GLOIRV Era)</h3>
-    <p>Unseen, unfiltered moments from the GLOIRV era. For the real ones who know the grind before the glow-up.</p>
-
-    <h3>Before The Come Up – Bio</h3>
-    <p>The full journey from GLOIRV to Putyaonskatez. Documenting how the movement started, and where it’s headed.</p>
+  <!-- Podcast Section -->
+  <section class="section" id="podcast">
+    <h2>🎧 Podcast Real Talk</h2>
+    <p>Convos on gaming, creativity, street culture. Drop your episode link below:</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/YOUR_PODCAST_VIDEO_ID" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <!-- 🛹 Skateboard Life Section -->
-  <section id="skateboard-life">
-    <h2>🛹 Skateboard Life</h2>
-    <h3>Skatepark Clips</h3>
-    <p>Real sessions. Real tricks. Filmed while wearing exclusive Putyaonskatez gear.</p>
-
-    <h3>Custom Skate Decks & Decals</h3>
-    <p>Designed for skaters, creators, and rebels. Street + soul style.</p>
-
-    <h3>Tech Deck Customs</h3>
-    <p>Miniatures with meaning. Handmade Putyaonskatez Tech Decks for collectors & die-hards.</p>
-  </section>
-
-  <!-- 👕 Merch & Drops Section -->
-  <section id="merch-drops">
+  <!-- Merch Section -->
+  <section class="section" id="merch">
     <h2>👕 Merch & Drops</h2>
-    <h3>Putyaonskatez Official Merch</h3>
-    <p>T-shirts, stickers, and future apparel drops straight from the creator. No middlemen. No clones.</p>
-
-    <h3>Sticker Packs</h3>
-    <p>Unique logo and limited edition sticker bundles for tagging, skating, and representing.</p>
+    <div class="merch-grid">
+      <div class="product-card">
+        <img src="featured-deck-1.jpg" alt="Custom Deck #1"/>
+        <h3>Putyaonskatez Deck – Classic</h3>
+        <p>$59.95</p>
+        <a href="LINK_TO_PRODUCT_1" target="_blank">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="featured-deck-2.jpg" alt="Limited Edition Deck"/>
+        <h3>Putyaonskatez Deck – Limited</h3>
+        <p>$74.99</p>
+        <a href="LINK_TO_PRODUCT_2" target="_blank">Pre‑Order</a>
+      </div>
+    </div>
   </section>
 
-  <!-- 🎧 Podcast Section -->
-  <section id="podcast">
-    <h2>🎧 Podcast (Real Talk)</h2>
-    <h3>The Putyaonskatez Podcast</h3>
-    <p>Solo episodes and guest interviews. Topics on gaming culture, fashion, cars, and the creative grind. Unfiltered.</p>
+  <!-- TikTok Follow Link -->
+  <section class="section socials">
+    <h2>📱 Follow Me</h2>
+    <p>Tap in on TikTok — join the movement and watch exclusive clips.</p>
+    <a href="https://www.tiktok.com/@putyaonskatez" target="_blank" rel="noopener noreferrer">
+      @putyaonskatez on TikTok
+    </a>
   </section>
 
-  <!-- 🌿 Nature Audio Section -->
-  <section id="nature-audio">
-    <h2>🌿 Nature Audio Series</h2>
-    <h3>Spiritual Talks in Nature</h3>
-    <p>Raw audio clips recorded in nature — reflecting on life, spiritual awakening, purpose, pain, and peace.</p>
-  </section>
-
-  <!-- 💬 Discord Section -->
-  <section id="discord-community">
-    <h2>💬 Discord Community</h2>
-    <h3>Join the Putyaonskatez Discord</h3>
-    <p>Tap in with gamers, creatives, and fans. Get updates, exclusive content, and build a movement together.</p>
-    <p><strong>👉 <a href="YOUR_DISCORD_INVITE_LINK_HERE" target="_blank">Join Now</a></strong></p>
-  </section>
+  <!-- Bottom Signature Banner -->
+  <img src="pyosbanner-bg.png.jpg" alt="Signature Banner Bottom" class="banner"/>
 
 </body>
 </html>
