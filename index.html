@@ -2,19 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fullscreen Image</title>
+  <title>Your Site</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      background-color: #000; /* black background */
+      color: #fff; /* white text */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      overflow-x: hidden;
     }
-    body {
-      background: url('https://i.imgur.com/IiSDsIl.png') no-repeat center center fixed;
-      background-size: cover;
+
+    .logo {
+      width: 150px;
+      margin-top: 40px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .content {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
+
+  <!-- Captain Price Logo -->
+  <img src="https://i.imgur.com/IiSDsIl.png" alt="Captain Price Logo" class="logo">
+
+  <!-- Site Content -->
+  <div class="content">
+    <h1>Welcome to My Site</h1>
+    <p>This site is minimal, sleek, and all about the vibes. Stay tuned for more.</p>
+  </div>
+
 </body>
 </html>
