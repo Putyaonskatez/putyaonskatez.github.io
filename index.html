@@ -1,70 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>PYOS Text</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  <meta charset="UTF-8">
+  <title>PYOS Styled Text</title>
+  <!-- Google Font Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-  body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Fredoka One', cursive;
-  }
+    .pyos-text {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 10rem;
+      font-weight: bold;
+      color: white;
+      text-shadow:
+        -3px -3px 0 #000,
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000;
+    }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* This creates the zigzag effect by alternating margin */
-  }
-
-  .letter {
-    font-size: 8rem;
-    font-weight: 900;
-    color: white;
-    position: relative;
-    width: 100px;
-    text-align: center;
-  }
-
-  /* Zigzag effect: odd letters pushed left, even letters pushed right */
-  .letter:nth-child(odd) {
-    margin-left: 0;
-  }
-
-  .letter:nth-child(even) {
-    margin-left: 40px;
-  }
-
-  /* Style the star inside the O */
-  .star {
-    color: deeppink;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -55%);
-    font-size: 3.5rem;
-    pointer-events: none;
-  }
-</style>
+    .pyos-text .star {
+      display: inline-block;
+      transform: scale(1.2);
+      margin: 0 0.05em;
+    }
+  </style>
 </head>
 <body>
-
-<div class="container" aria-label="PYOS stylized text vertical zigzag">
-  <div class="letter">P</div>
-  <div class="letter">Y</div>
-  <div class="letter" style="position: relative;">
-    O
-    <span class="star">★</span>
+  <div class="pyos-text">
+    P Y <span class="star">★</span> S
   </div>
-  <div class="letter">S</div>
-</div>
-
 </body>
 </html>
